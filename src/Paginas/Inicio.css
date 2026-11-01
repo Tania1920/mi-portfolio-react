@@ -1,0 +1,98 @@
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 30px;
+  background-color: #f7f9fc;
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.inicio-contenido{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.inicio-presentacion {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.inicio-saludo {
+  color: #4299d0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.inicio h1 {
+  color: #172b4d;
+  font-size: clamp(50px, 5vw, 48px);
+  margin: 20px 0;
+}
+
+.inicio h1 span {
+  color: #4299d0;
+}
+
+.inicio h2 {
+  color: #172b4d;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.inicio-descripcion {
+  color: #526174;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 25px 0;
+}
+
+.inicio-boton {
+  display: inline-block;
+  background-color: #75bdeb;
+  color: #172b4d;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.inicio-boton:hover {
+  background-color: #4299d0;
+  color: white;
+}
+
+.inicio-API {
+  width: 100%;
+  max-width: 1400px;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .inicio {
+    padding: 35px 15px;
+    margin: 10px;
+    gap: 40px;
+  }
+
+  .inicio-presentacion{
+    text-align: center;
+  }
+
+  .inicio h2 {
+    font-size: 20px;
+  }
+
+  .inicio-descripcion {
+    font-size: 16px;
+  }
+
+}
